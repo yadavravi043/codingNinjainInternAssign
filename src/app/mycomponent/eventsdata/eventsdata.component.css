@@ -1,0 +1,23 @@
+.datacontainer{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dataitem{
+    width: 50%;
+}
+/* @media (max-width:800px) {
+    .datacontainer{
+        align-items: center;
+    }
+    .dataitem{
+        width: 70%;
+    }
+    
+} */
+/* .imagecon{
+    width: 100%;
+    height: 150px;
+} */

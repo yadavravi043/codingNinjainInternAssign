@@ -1,0 +1,32 @@
+<!-- {{myData.data.events | json}} -->
+
+<div class="datacontainer">
+  <div class="dataitem" *ngFor="let item of myData.data.events"  >
+    <div class="card" style="width: 80%; height: 450px; margin: 20px">
+        <div class="imagecon">
+            <img
+              class="card-img-top"
+              height="150px"
+              src="{{ item.cover_picture }}"
+              alt="Card image cap"
+            />
+        </div>
+      <div class="card-body" >
+        <h5 class="card-title">{{ item.name }}</h5>     
+      </div>
+      <p class="card-text">
+        {{item.short_desc}}
+      </p>
+        <div class="registerbutton">
+            <button style=" background-color:#fa7328 ;">REGISTER NOW</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <p>
+    <a href="" style="text-decoration: none;">
+        {{item.name}}
+    </a>
+</p> -->

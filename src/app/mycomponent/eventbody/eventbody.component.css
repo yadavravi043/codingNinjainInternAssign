@@ -1,0 +1,113 @@
+.main{
+    background: url("https://files.codingninjas.com/circuit-1-9465.svg");
+    background-color: #060648;
+    width: 100%;
+    height: 2800px;
+    /* height: 90%; */
+    padding-top: 30px;
+}
+.topheading{
+    margin-top: 70px;
+    margin-left: 4rem;
+    margin-bottom: 70px;
+    color: white;
+}
+.container{
+    border-radius: 10px;
+    height: 83%;
+    /* height: 79%; */
+    width: 95%;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.firstevent{
+    height: 6%;
+    width: 100%;
+    background-color: #faf7f2;
+}
+.secondevent{
+ height: 60px;
+ width: 100%;
+ display: flex;
+ padding-top: 20px;
+ padding-left: 30px;
+ background-color: white;
+}
+.bottomContainer{
+    background-color:#faf7f2 ;
+    width: 100%;
+    height: 89%;
+}
+.firstContent{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-around;
+padding-top: 15px;
+overflow-x: scroll;
+}
+.firstContent h5{
+    color:#9E9E9E; 
+}
+/* @media (max-width:900px) {
+    .firstevent {
+        overflow-x: scroll;
+    } 
+} */
+.archived{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* .firstContent {
+    width: 30%;
+} */
+.firstContentChild{
+width: 20%;
+}
+@media(max-width:820px){
+    .firstevent{
+        height: 10rem;
+    }
+    .firstContentChild{
+        width: 33%;
+    }
+}
+@media(max-width:400px){
+    .firstevent{
+        height: 12rem;
+    }
+    .firstContentChild{
+        width: 50%;
+    }
+    .secondevent{
+        padding-left: 0px;
+    }
+}
+.bottomContainer{
+    /* height: 100%; */
+    display: flex;
+}
+.bottomMain{
+    height: 100%;
+    width: 75%;
+    /* background-color: black; */
+}
+.mainAside{
+    height: 100%;
+    width: 25%;
+    color: #9E9E9E;
+    /* background-color: aqua; */
+}
+.mainAside a{ 
+    color: #9E9E9E;
+}
+a{
+    color: #9E9E9E;
+    /* color: black; */
+}
+.firstevent a.active{
+    color:#FA7328;
+}
+.secondevent a.active{
+    color:#FA7328;
+}

@@ -1,0 +1,11 @@
+.navbar{
+    top: 0;
+    left: 0;
+    position:sticky;
+    padding: 0px 50px 0px 300px;
+}
+.navheader{
+    background-color: rgb(255, 0, 4)!important;
+}
+/* .enrollbutton{
+    /* background-color:#EFEFEF; */

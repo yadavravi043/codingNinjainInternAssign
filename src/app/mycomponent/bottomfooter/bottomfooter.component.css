@@ -1,0 +1,32 @@
+.main{
+    background-color:#fff;
+    width:100vw;
+    height:100%;
+    padding: 20px;
+    }
+ .container{
+        background-color:#fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        font-family:  Mulish,Helvetica,Arial,sans-serif;
+}
+.botp{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.razorpay{
+    display: flex;
+}
+
+
+@media(max-width:700px){
+ .botp{
+    display: flex;
+    flex-direction: column;
+ }
+}

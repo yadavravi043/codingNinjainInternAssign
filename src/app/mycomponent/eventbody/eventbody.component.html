@@ -1,0 +1,98 @@
+<div class="main">
+    <div class="topheading">
+        <h1>EVENTS & NEWS</h1>
+        <h3>Learn ,Complete & Grow</h3>
+    </div>
+   <div class="container">
+         <div class="firstevent">
+            <div class="firstContent">
+                    <div style="font-size:larger;" class="firstContentChild">
+                        <p>
+                            <a [routerLink]="['/events']" 
+                            routerLinkActive="active" 
+                            style="text-decoration: none;"
+                            [queryParams]="{event_category:'ALL_EVENTS',event_sub_category:'Upcoming',tag_list,offset}"
+                            >
+                               <i class="fa-solid fa-calendar-days"></i>
+                               All Events
+                           </a>
+                        </p>
+                    </div>
+                    <div style="font-size:larger" class="firstContentChild">
+                        <p>
+                            <a  [routerLink]="['/events']" 
+                            [queryParams]="{event_category:'WEBINAR',event_sub_category:'Upcoming',tag_list:'',offset}"
+                             style="text-decoration: none;">
+                              <i class="fa-solid fa-computer"></i>
+                            Webinars
+                        </a>
+                        </p>
+                    </div>
+                    <div style="font-size:larger" class="firstContentChild">
+                        <p>
+                            <a [routerLink]="['/events']" 
+                            [queryParams]="{event_category:'CODING_EVENT',event_sub_category:'Upcoming',tag_list:'',offset}"
+                             style="text-decoration: none;">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                Coding Events
+                            </a>
+                        </p>
+                    </div>
+                    <div style="font-size:larger" class="firstContentChild">
+                        <p>
+                            <a [routerLink]="['/events']" 
+                            [queryParams]="{event_category:'BOOTCAMP_EVENT',event_sub_category:'Upcoming',tag_list:'',offset}"
+                             style="text-decoration: none;">
+                                <i class="fa-regular fa-laptop"></i>
+                                Bootcamp Events
+                            </a>
+                        </p>
+                    </div>
+                    <div style="font-size:larger" class="firstContentChild">
+                        <p>  
+                            <a [routerLink]="['/events']" 
+                            [queryParams]="{event_category:'WORKSHOP',event_sub_category:'Upcoming',tag_list:'',offset}"
+                             style="text-decoration: none;">
+                                <i class="fa-solid fa-computer"></i>
+                                Workshop
+                            </a>
+                        </p>
+                    </div>
+            </div>
+
+         </div>
+         <div class="secondevent">
+            <div class="upcoming" >
+                <a [routerLink]="['/events']" 
+                routerLinkActive="active"
+                [queryParams]="{event_category:'ALL_EVENTS',event_sub_category:'Upcoming',tag_list:'',offset}"
+                 style="text-decoration: none;">
+                    Upcoming
+                </a>
+            </div>
+            <div class="archived">
+                <a [routerLink]="['/events']" 
+                [queryParams]="{event_category:'ALL_EVENTS',event_sub_category:'Archived',tag_list:'',offset}"
+                 style="text-decoration: none;">
+                    Archived
+                </a>
+            </div>
+            <div class="favorites">
+                <a [routerLink]="['/events']" 
+                [queryParams]="{event_category:'ALL_EVENTS',event_sub_category:'All_Time_Favorites',tag_list:'',offset}"
+                 style="text-decoration: none;">
+                    All Time Favorites
+                </a>
+            </div>
+         </div>
+         <div class="bottomContainer">
+            <div class="bottomMain">
+                <app-eventsdata></app-eventsdata>
+            </div>
+            <div class="mainAside">
+                <h5 style="text-align: center;">TAGS</h5>
+                   <app-tags></app-tags>
+            </div>
+         </div>
+   </div>
+</div>
